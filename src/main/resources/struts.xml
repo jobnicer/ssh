@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE struts PUBLIC  
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"  
+    "http://struts.apache.org/dtds/struts-2.0.dtd">  
+  
+<struts>  
+    <constant name="struts.i18n.encoding" value="utf-8"/>  
+    <constant name="struts.devMode" value="true" />  
+      
+    <package name="ssh" extends="struts-default,json-default">  
+        <action name="loginAction_*" class="org.ssh.web.action.LoginAction" method="{1}">  
+            <result name="login">/login_success.jsp</result>  
+            <result name="menu" type="json">
+				<param name="root">pageModel</param>
+			</result>
+        </action>  
+    </package>  
+      
+</struts>  

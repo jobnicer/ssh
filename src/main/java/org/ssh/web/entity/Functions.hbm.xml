@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-1-2 0:06:31 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="org.ssh.web.entity.Functions" table="USR_FUNCTIONS" schema="TEST">
+        <id name="functionid" type="java.lang.Long">
+            <generator class="assigned" />
+        </id>
+        <property name="functiongroupid" type="java.lang.Long">
+            <column name="FUNCTIONGROUPID" />
+        </property>
+        <property name="functionname" type="string">
+            <column name="FUNCTIONNAME" length="20" />
+        </property>
+        <property name="functionurl" type="string">
+            <column name="FUNCTIONURL" length="100" />
+        </property>
+    </class>
+</hibernate-mapping>

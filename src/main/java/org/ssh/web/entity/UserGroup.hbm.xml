@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-1-2 0:06:31 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="org.ssh.web.entity.UserGroup" table="USR_USERGROUP" schema="TEST">
+        <id name="usergroupid" type="java.lang.Long">
+            <generator class="sequence">
+				<param name="sequence">SEQ_USERGROUP</param>
+			</generator>
+        </id>
+        <property name="usergroupname" type="string">
+            <column name="USERGROUPNAME" length="20" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

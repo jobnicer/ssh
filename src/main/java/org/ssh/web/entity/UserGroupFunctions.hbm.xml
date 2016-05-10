@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-1-2 0:06:31 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="org.ssh.web.entity.UserGroupFunctions" table="USR_USERGROUPFUNCTIONS" schema="TEST">
+        <composite-id name="id" class="org.ssh.web.entity.UserGroupFunctions">
+            <key-property name="usergroupid" type="java.lang.Long">
+                <column name="USERGROUPID" />
+            </key-property>
+            <key-property name="functionid" type="java.lang.Long">
+                <column name="FUNCTIONID" />
+            </key-property>
+        </composite-id>
+        <many-to-one name="functions" class="org.ssh.web.entity.Functions" insert="false" update="false" fetch="join" lazy="false">
+            <column name="FUNCTIONID" not-null="true" />
+        </many-to-one>
+        <many-to-one name="userGroup" class="org.ssh.web.entity.UserGroup" insert="false" update="false" fetch="join" lazy="false">
+            <column name="USERGROUPID" not-null="true" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>
