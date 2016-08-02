@@ -23,37 +23,31 @@ public class UserServiceImpl implements IUserService {
 	@Autowired
 	private IUserDao userDao;
 
-	@Override
 	public PageModel initUserList(PageModel pageModel) throws ServiceException {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	@Override
 	public PageModel initEditUser(PageModel pageModel) throws ServiceException {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	@Override
 	public PageModel editUser(PageModel pageModel) throws ServiceException {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	@Override
 	public PageModel deleteUser(PageModel pageModel) throws ServiceException {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	@Override
 	public PageModel changePass(PageModel pageModel) throws ServiceException {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	@Override
 	public PageModel resetPass(PageModel pageModel) throws ServiceException {
 		// TODO Auto-generated method stub
 		return null;

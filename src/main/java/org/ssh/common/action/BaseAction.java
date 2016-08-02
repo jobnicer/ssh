@@ -35,12 +35,10 @@ public class BaseAction extends ActionSupport implements SessionAware,
 		this.session = session;
 	}
 
-	@Override
 	public void setServletRequest(HttpServletRequest request) {
 		this.request = request;
 	}
 
-	@Override
 	public void setServletResponse(HttpServletResponse response) {
 		this.response = response;
 	}

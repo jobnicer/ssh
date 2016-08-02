@@ -27,7 +27,6 @@ public class LoginServiceImpl implements ILoginService {
 	@Autowired
 	private IFunctionsDao functionsDao;
 	
-	@Override
 	@SuppressWarnings("unchecked")
 	public User login(String name, String pass) throws ServiceException {
 		Map<String,Object> map = new HashMap<String,Object>();
@@ -47,7 +46,6 @@ public class LoginServiceImpl implements ILoginService {
 	}
 	
 	@SuppressWarnings("unchecked")
-	@Override
 	public PageModel loadMenu(PageModel pageModel, User user) throws ServiceException {
 //		User user = (User) ActionContext.getContext().getSession().get(Const.SESSION_USERINFO);
 		if(user!=null){

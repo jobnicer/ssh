@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
-	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
-  <display-name>ssh</display-name>
+<web-app version="3.0" 
+    xmlns="http://java.sun.com/xml/ns/javaee" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+        http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  	<display-name>ssh</display-name>
     <!-- 配置log4j.properties文件的位置,在src下面则不需要配置该项 -->
     <!-- 使用classpath 参数指定log4j.properties文件的位置,log4j的配置文件就不用非要放到src的下面 -->
 	<!-- classpath 指编译根目录,普通web项目为WEB-INF/classes, maven项目为target/classes文件夹 -->
